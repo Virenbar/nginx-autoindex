@@ -1,0 +1,25 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "@nuxtjs/eslint-config-typescript"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "@typescript-eslint/type-annotation-spacing": "warn",
+        "space-in-parens": "warn",
+        "quotes": "warn",
+        "eol-last": "warn",
+        "semi": "warn",
+        "no-multiple-empty-lines": [
+            "warn",
+            {
+                "max": 1
+            }
+        ]
+    }
+}
