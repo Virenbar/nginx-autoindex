@@ -1,25 +1,20 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "@nuxtjs/eslint-config-typescript"
+  "extends": [
+    "@nuxt/eslint-config"
+  ],
+  "rules": {
+    "@typescript-eslint/type-annotation-spacing": "warn",
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1
+      }
     ],
-    "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "@typescript-eslint/type-annotation-spacing": "warn",
-        "space-in-parens": "warn",
-        "quotes": "warn",
-        "eol-last": "warn",
-        "semi": "warn",
-        "no-multiple-empty-lines": [
-            "warn",
-            {
-                "max": 1
-            }
-        ]
-    }
+    // Conflicts
+    "semi": "off",
+    "vue/multi-word-component-names": "off",
+    "no-use-before-define": "off",
+    "space-before-function-paren": "off",
+    "vue/max-attributes-per-line": "off"
+  }
 }

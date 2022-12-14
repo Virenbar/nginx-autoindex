@@ -1,0 +1,11 @@
+<template>
+  <div class="text-center">
+    <div class="glitch-wrapper">
+      <h1 class="glitch" data="404">
+        404
+      </h1>
+    </div>
+    <p><strong>Page not found :(</strong></p>
+    <p>The requested page could not be found.</p>
+  </div>
+</template>
