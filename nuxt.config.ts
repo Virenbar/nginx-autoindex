@@ -19,7 +19,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      endpoint: ''
+      api: '',
+      files: ''
     }
   }
 })

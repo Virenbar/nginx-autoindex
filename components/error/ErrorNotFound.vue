@@ -5,7 +5,7 @@
         404
       </h1>
     </div>
-    <p><strong>Page not found :(</strong></p>
-    <p>The requested page could not be found.</p>
+    <p><strong>Directory not found :(</strong></p>
+    <p>The requested directory could not be found.</p>
   </div>
 </template>

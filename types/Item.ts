@@ -4,11 +4,5 @@ declare interface Item {
   type: "directory" | "file"
   mtime: Date
   size?: number
-}
-
-declare interface ItemJSON {
-  name: string
-  type: "directory" | "file"
-  mtime: string
-  size?: number
+  url: string
 }

@@ -7,10 +7,10 @@
   </span>
 </template>
 <script setup lang="ts">
-const props = defineProps<Props>()
-const dirs = props.uri.replace(/\/[^/]*$/, "").split("/")
+const props = defineProps<Props>();
+const dirs = props.uri.replace(/\/[^/]*$/, "").split("/");
 
-let path = ""
+let path = "";
 const crumbs: Crumb[] = [];
 for (let i = 0; i < dirs.length; i++) {
   path += dirs[i] + "/";
@@ -18,7 +18,7 @@ for (let i = 0; i < dirs.length; i++) {
     name: i == 0 ? "root" : decodeURIComponent(dirs[i]),
     url: path,
     active: i != dirs.length - 1
-  })
+  });
 }
 
 interface Props { uri: string }
