@@ -1,15 +1,16 @@
+const config = useRuntimeConfig().public;
+
 export default async function (path: string) {
-  const config = useRuntimeConfig().public;
-  const url = `${config.api}${path}`;
+  const url = `${config.json}${path}`;
 
   const { data, error } = await useFetch<ItemJSON[]>(url);
   if (!data.value || error.value) { return null; }
 
-  return data.value.map(I => ({
+  return <Item[]>data.value.map(I => ({
     name: I.name,
     type: I.type,
     mtime: new Date(I.mtime),
-    url: `${config.files}${I.name}`,
+    url: `${config.storage}${path}${I.name}`,
     size: I.size
   }));
 }

@@ -6,7 +6,8 @@
   </div>
 </template>
 <script setup lang="ts">
-const path = useRoute().path;
+let path = useRoute().path;
+if (!path.endsWith("/")) { path += "/"; }
 const items = await useDirectory(path);
 console.log(items);
 </script>
