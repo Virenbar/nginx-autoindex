@@ -5,7 +5,15 @@
         404
       </h1>
     </div>
-    <p><strong>Directory not found :(</strong></p>
-    <p>The requested directory could not be found.</p>
+    <p><strong>{{ props.title ?? 'Directory not found :(' }} :(</strong></p>
+    <p>{{ props.body ?? "The requested directory could not be found." }}.</p>
   </div>
 </template>
+<script setup lang="ts">
+const props = defineProps<Props>();
+
+interface Props {
+  title?: string,
+  body?: string
+}
+</script>

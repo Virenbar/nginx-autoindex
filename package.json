@@ -1,5 +1,5 @@
 {
-  "name": "nginx-autoindex",
+  "name": "virenbar.nginx-autoindex",
   "version": "1.0.0",
   "description": "Frontend for nginx autoindex",
   "author": "Virenbar",
@@ -15,11 +15,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootswatch": "^5.2.3"
+  },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.0",
-    "eslint": "^8.30.0",
-    "nuxt": "^3.0.0",
-    "typescript": "^4.9.4"
+    "@nuxt/eslint-config": "^0.1.1",
+    "@types/bootstrap": "^5.2.6",
+    "eslint": "^8.37.0",
+    "nuxt": "^3.3.2",
+    "sass": "^1.59.3",
+    "typescript": "^4.9.5"
   },
   "private": true
 }

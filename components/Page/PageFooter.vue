@@ -3,12 +3,14 @@
     <div class="d-none d-md-block">
       Hosted on <a target="_blank" href="https://nginx.org/">nginx</a>
     </div>
+
     <div class="d-none d-md-block">
       This
-      <a target="_blank" href="https://github.com/Virenbar/virenbar.github.io">website</a>
+      <a href="https://github.com/Virenbar/nginx-autoindex">website</a>
       made using
-      <a target="_blank" href="https://v3.nuxtjs.org/">
-        <i class="fa-solid fa-mountain" /> Nuxt3
+      <a href="https://nuxt.com/">
+        <i class="fa-solid fa-mountain" />
+        Nuxt
       </a>
     </div>
   </footer>
